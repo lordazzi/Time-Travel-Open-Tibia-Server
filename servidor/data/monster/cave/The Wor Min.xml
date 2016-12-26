@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Wor Min" nameDescription="the Wor Min" race="blood" experience="1750" speed="250" manacost="0">
+	<health now="3500" max="3500"/>
+	<look type="295" corpse="8948"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag staticattack="50"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="35"/>
+		<attack name="lifedrain" interval="1000" chance="12" range="1" min="-30" max="-55"/>
+		<attack name="poisoncondition" interval="1000" chance="25" range="5" min="-14" max="-26">
+			<attribute key="shooteffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="15"/>
+	<elements>
+		<element firePercent="-20"/>
+		<element earthPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="100">
+		<voice sentence="OOOOOoooohhh... Humano estúpido! Saia de minha presença!" yell="1"/>
+		<voice sentence="HOHOHOHO!!! Como se atreve a me desafiar?" yell="1"/>
+		<voice sentence="Sinta meu ácido dissover sua carne macia." yell="1"/>
+		<voice sentence="Como se atreve? Como se atreve!?!?" yell="1"/>
+		<voice sentence="Como se atreve a tocar em um dos três lendários irmãos!?" yell="1"/>
+		<voice sentence="Como se atreve vir até minha toca!! Mero mortal!!!" yell="1"/>
+		<voice sentence="Morra em nome de Wor Min!!!" yell="1"/>
+		<voice sentence="Eu vou devorar suas tripas!!!" yell="1"/>
+		<voice sentence="MOOOORRA!!!" yell="1"/>
+		<voice sentence="MOOOORRA!!!" yell="1"/>
+		<voice sentence="MOOOORRA!!!" yell="1"/>
+		<voice sentence="MOOOORRA!!!" yell="1"/>
+		<voice sentence="ESCÓRIA!!!" yell="1"/>
+		<voice sentence="ESCÓRIA!!!" yell="1"/>
+		<voice sentence="ESCÓRIA!!!" yell="1"/>
+		<voice sentence="ESCÓRIA!!!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="52" chance="100000"/><!-- gold coin -->
+		<item id="8971" chance="1500"/><!-- gland -->
+		<item id="3976" countmax="45" chance="20000"/><!-- worm -->
+		<item id="2416" chance="20000"/><!-- crowbar -->
+		<item id="2394" chance="20000"/><!-- morning star -->
+		<item id="2398" chance="9000"/><!-- mace -->
+		<item id="2376" chance="5000"/><!-- sword -->
+		<item id="2412" chance="1000"/><!-- katana -->
+		<item id="2530" chance="1000"/><!-- copper shield -->
+		<item id="2148" countmax="49" chance="20750"/><!-- gold coin -->
+		<item id="2666" countmax="6" chance="20000"/><!-- meat -->
+		<item id="2671" countmax="2" chance="18000"/><!-- ham -->
+		<item id="2241" chance="18000"/><!-- ham -->
+	</loot>
+</monster>

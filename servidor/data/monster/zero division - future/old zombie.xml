@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Old Zombie" nameDescription="an old zombie" race="blood" experience="250" speed="125" manacost="550">
+	<health now="210" max="350"/>
+	<look type="100" corpse="6029"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="35"/>
+	</attacks>
+	<defenses armor="20" defense="32"/>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<elements>
+		<element deathPercent="100"/>
+		<element holyPercent="-50"/>
+	</elements>
+	<summons maxSummons="1">
+		<summon name="Zombie Rotten" interval="5000" chance="17" max="1"/>
+	</summons>
+	<voices interval="2000" chance="10">
+		<voice sentence="NOOOoooooooooo...." yell="1" />
+		<voice sentence="Ahhhhhhhh..."/>
+		<voice sentence="Argg..."/>
+		<voice sentence="NOOOoooooooooo...." yell="1" />
+		<voice sentence="Ahhhhhhhh..."/>
+		<voice sentence="No..."/>
+	</voices>
+	<loot capacity="300">
+		<item id="2460" chance="19250"/><!-- brass helmet -->
+		<item id="5913" chance="1000"/><!-- brown piece of cloth -->
+		<item id="2403" chance="15250"/><!-- knife -->
+		<item id="2168" chance="2000"/><!-- life ring -->
+		<item id="2483" chance="2900"/><!-- scale armor -->
+		<item id="2229" countmax="2" chance="1500"/><!-- skull -->
+		<item id="2050" chance="57850"/><!-- torch -->
+		<item id="2473" chance="5800"/><!-- viking helmet -->
+		<item id="3976" countmax="6" chance="47500"/><!-- worm -->
+		<item id="2148" countmax="30" chance="24000"/><!-- gold coin -->
+		<item id="2148" countmax="30" chance="20000"/><!-- gold coin -->
+		<item id="2227" chance="45000"/><!-- rotten meat -->
+		<item id="2050" chance="46250"/><!-- torch -->
+		<item id="2460" chance="8700"/><!-- brass helmet -->
+		<item id="2457" chance="1700"/><!-- steel helmet -->
+		<item id="2398" chance="7250"/><!-- mace -->
+		<item id="9811" chance="7250"/><!-- rusty legs -->
+		<item id="9814" chance="7250"/><!-- rusty shield -->
+		<item id="9817" chance="7250"/><!-- rusty boots -->
+		<item id="9820" chance="7250"/><!-- rusty helmet -->
+		<item id="2381" chance="2900"/><!-- battle hammer -->
+		<item id="2381" chance="4350"/><!-- halberd -->
+		<item id="2205" chance="2900"/><!-- life ring -->
+		<item id="7620" chance="1450"/><!-- mana potion -->
+		<item id="2657" chance="900"/><!-- simple dress -->
+		<item id="2401" chance="15000"/><!-- staff -->
+		<item id="2175" chance="10000"/><!-- spell book -->
+		<item id="2144" chance="650"/><!-- black pearl -->
+		<item id="2143" chance="550"/><!-- white pearl -->
+		<item id="2237" chance="45000"/><!-- dirty cape -->
+		<item id="2479" chance="6000"/><!-- strange helmet -->
+		<item id="2171" chance="300"/><!-- platinium amulet -->
+		<item id="2214" chance="750"/><!-- ring of healing -->
+		<item id="2535" chance="100"/><!-- castle shield -->
+	</loot>
+</monster>

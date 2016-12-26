@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ancient Moth" nameDescription="an ancient moth" race="florest" experience="720" speed="218" manacost="0">
+	<health now="5000" max="5000"/>
+	<look type="87" head="0" body="0" legs="0" feet="0" corpse="2983"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="70" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="20" poison="50"/>
+		<attack name="poison" interval="1000" chance="12" range="7" min="-15" max="-135">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="13" range="7" speedchange="-900" duration="25000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="1000" chance="17" radius="5" target="0" min="-50" max="-200">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="1000" chance="17" radius="5" target="0" min="-250" max="-350">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="25" radius="5" target="0" speedchange="-400" duration="20000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="15">
+		<defense name="speed" interval="1000" chance="8" speedchange="1701" duration="9000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<elements>
+		<element earthPercent="0"/>
+		<element waterPercent="0"/>
+		<element firePercent="-200"/>
+		<element windPercent="-25"/>
+		
+		<element icePercent="-150"/>
+		<element floraPercent="50"/>
+		<element alchemyPercent="-150"/>
+		<element thunderPercent="-100"/>
+		
+		<element bugPercent="100"/>
+		<element inkPercent="0"/>
+		<element crystalPercent="-50"/>
+		<element poisonPercent="100"/>
+		
+		<element lovePercent="0"/>
+		<element ukaukaPercent="-50"/>
+		<element akuakuPercent="-50"/>
+	</elements>
+	<summons maxSummons="3">
+		<summon name="caterpillar" interval="1000" chance="15" max="3"/>
+	</summons>
+	<loot capacity="500">
+		<item id="9674" countmax="1" chance="50000"/>
+		<item id="8309" countmax="80" chance="25000"/>
+		<item id="8309" countmax="55" chance="25000"/>
+		<item id="8309" countmax="15" chance="25000"/>
+	</loot>
+</monster>

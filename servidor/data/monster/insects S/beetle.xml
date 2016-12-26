@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="Beetle" namedescription="a beetle" race="venom" experience="20" speed="240" manacost="250">
+	<health now="50" max="50"/>
+	<look type="284" corpse="8593"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag ignore="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="20" attack="16"/>
+	</attacks>
+	<defenses armor="6" defense="8"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<loot>
+		<item id="8710" chance="3000"/><!-- bug leg 3% -->
+	</loot>
+</monster>

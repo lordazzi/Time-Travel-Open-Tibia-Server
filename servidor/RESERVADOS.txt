@@ -1,0 +1,28 @@
+STORAGES:
+1 - linguagem
+2, 3, 4 - posição do teleport
+5, 6, 7, 8 - posição do teleport ninja e o tempo
+9 a 100 - reservado
+
+101 a 9.000 - quests de item
+9.001 a 15.000 - quests de npc
+15.001 - 20.000 - move events
+
+
+ACTION IDS:
+1 a 99
+100 - teletransporte
+
+101 a 9.000 - action id de item de quests
+
+15.001 - 20.000 - move events
+
+
+15.001 - laboratorio da faculdade 1
+15.002 - laboratorio da faculdade 2
+
+15.003 - inicio do jogo 1
+15.004 - inicio do jogo 2
+15.005 - inicio do jogo 3
+
+EMBAIXO DO DP FALTA MONSTROS

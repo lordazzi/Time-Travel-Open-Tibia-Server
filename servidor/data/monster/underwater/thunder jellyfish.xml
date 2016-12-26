@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Thunder JellyFish" nameDescription="a thunder jellyfish" race="energy" experience="300" speed="700" manacost="550">
+	<health now="1500" max="1500"/>
+	<look typeex="13675" corpse="13682"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="3"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="20" energy="25"/>
+		<attack name="physical" interval="500" chance="15" range="7" min="-45" max="-60">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="0" defense="0"/>
+	<elements>
+		<element earthPercent="-100"/>
+		<element firePercent="-25"/>
+		<element energyPercent="200"/>
+		<element icePercent="-65"/>
+		<element physicalPercent="-90"/>
+	</elements>
+	<voices interval="5000" chance="30">
+		<voice sentence="DzZzZZZZZz"/>
+		<voice sentence="DZz"/>
+	</voices>
+</monster>

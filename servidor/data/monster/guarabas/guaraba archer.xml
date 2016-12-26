@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Guaraba Archer" nameDescription="a guaraba archer" race="blood" experience="60" speed="172" manacost="390">
+	<health now="110" max="110"/>
+	<look type="154" head="116" body="117" legs="62" feet="105" corpse="6080"/>
+	<targetchange interval="2000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="25"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="24" attack="16"/>
+		<attack name="physical" interval="1000" chance="10" range="7" min="-35" max="-50">
+			<attribute key="shootEffect" value="piercingbolt"/>
+		</attack>
+	</attacks>
+	<defenses armor="11" defense="11"/>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="0"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Yeeee"/>
+		<voice sentence="Yeehaa"/>
+		<voice sentence="Ybebe"/>
+		<voice sentence="Ululu"/>
+		<voice sentence="YBebe Ybebe Yeeha!"/>
+	</voices>
+	<loot capacity="800">
+		<item id="2667" countmax="3" chance="30000"/> <!-- fish -->
+		<item id="2669" countmax="1" chance="10000"/> <!-- large fish -->
+		<item id="5803" countmax="1" chance="200"/> <!-- arbalest -->
+		<item id="7363" countmax="32" chance="80000"/> <!-- piercing bolt -->
+		<item id="3983" countmax="1" chance="50000"/> <!-- native skirt -->
+		<item id="2050" countmax="1" chance="5000"/> <!-- torch -->
+		<item id="3970" countmax="1" chance="100"/> <!-- Guaraba helmet -->
+		<item id="7343" chance="30000"> <!-- native bag -->
+			<inside>
+				<item id="2148" countmax="5" chance="40000"/> <!-- copper coin -->
+				<item id="2147" countmax="3" chance="100"/> <!-- ruby -->
+			</inside>
+		</item>
+	</loot>
+</monster>

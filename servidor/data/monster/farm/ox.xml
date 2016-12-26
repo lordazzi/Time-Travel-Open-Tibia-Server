@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ox" nameDescription="an ox" race="blood" experience="140" speed="115" manacost="0">
+	<health now="200" max="200"/>
+	<look type="35" head="0" body="0" legs="0" feet="0" corpse="2916"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="15"/>
+		<attack name="physical" interval="3000" chance="15" range="7" radius="3" target="0" min="-5" max="-50">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="12" defense="13">
+		<defense name="speed" interval="2000" chance="10" speedchange="150" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="50000" chance="10">
+		<voice sentence="Moooooooooah"/>
+		<voice sentence="Ooooh..."/>
+	</voices>
+	<loot capacity="150">
+		<item id="2671" countmax="4" chance="40000"/>
+		<item id="12428" countmax="2" chance="40000"/>
+		<item id="2666" countmax="4" chance="70000"/>
+		<item id="5911" countmax="1" chance="1000" />
+		<item id="5878" countmax="1" chance="1000" />
+		<item id="5954" countmax="1" chance="1000"/>
+	</loot>
+</monster>

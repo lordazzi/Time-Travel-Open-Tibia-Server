@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Celeste" nameDescription="the celeste" race="blood" experience="125" speed="120" manacost="205">
+	<health now="400" max="400"/>
+	<look type="28" head="86" body="91" legs="91" feet="91" corpse="2817"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="30"/>
+	</attacks>
+	<defenses armor="5" defense="5">
+		<defense name="healing" interval="4000" chance="25" min="10" max="30">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="3000" chance="10" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="10">
+		<voice sentence="Pzzzzzz"/>
+		<voice sentence="I'm just a little snake"/>
+		<voice sentence="Pzzzzzz"/>
+		<voice sentence="I have no feets neither hands ):"/>
+		<voice sentence="Pzzzzzz"/>
+		<voice sentence="Pssss... Don't do that, it is wrong!"/>
+	</voices>
+</monster>

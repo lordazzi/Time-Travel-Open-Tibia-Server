@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Aku Aku" nameDescription="the Aku Aku in his second form" race="undead" experience="10" speed="700" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="87" head="0" body="0" legs="0" feet="0" corpse="0"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="holy" interval="500" chance="100" range="6" min="-15" max="-30">
+			<attribute key="shootEffect" value="holy"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="65">
+		<defense name="healing" interval="1000" chance="13" min="250" max="650">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="9" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="double aku aku heal" interval="2500" chance="25"></defense>
+	</defenses>
+	<elements>
+		<element firePercent="40"/>
+		<element earthPercent="40"/>
+		<element energyPercent="40"/>
+		<element icePercent="40"/>
+		<element deathPercent="40"/>
+		<element holyPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="20">
+		<voice sentence="Buga, turu tutu"/>
+		<voice sentence="Uga!"/>
+		<voice sentence="Turu tuturu tutu"/>
+		<voice sentence="Crash? Coco?"/>
+	</voices>
+</monster>

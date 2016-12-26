@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Faster Velociraptor" nameDescription="a faster velociraptor" race="blood" experience="210" speed="325" manacost="0">
+	<health now="360" max="360"/>
+	<look type="271" corpse="7621"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="22"/>
+		<attack name="lifedrain" interval="1000" chance="14" length="8" spread="3" min="-20" max="-40">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="12" radius="6" target="0" speedchange="-50" duration="60000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="25">
+		<defense name="healing" interval="1000" chance="13" min="8" max="33">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="10" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="55" chance="37500"/><!-- gold coin -->
+		<item id="2672" chance="25000"/><!-- dragon ham -->
+		<item id="7618" chance="5000"/><!-- health potion -->
+	</loot>
+</monster>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rocksaur" nameDescription="a rocksaur" race="blood" experience="2300" speed="170" manacost="0">
+	<health now="1250" max="1250"/>
+	<look type="99" corpse="3022"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="40"/>
+		<attack name="manadrain" interval="2000" chance="13" min="-30" max="-105" range="7"></attack>
+		<attack name="ice" interval="1000" chance="15" radius="2" target="1" min="-150" max="-390">
+			<attribute key="areaEffect" value="bluebubble"/>
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="12" length="8" spread="3" min="-50" max="-160">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="15" range="7" min="-60" max="-120">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="38">
+	</defenses>
+	<elements>
+		<element earthPercent="100"/>
+		<element physicalPercent="22"/>
+		<element firePercent="20"/>
+		<element energyPercent="13"/>
+		<element deathPercent="10"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity ice="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="50">
+		<voice sentence="WOOOOH!!!" yell="1"/>
+		<voice sentence="Wohh..." yell="0"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="55" chance="33750"/><!-- copper coin -->
+		<item id="2152" countmax="2" chance="33333"/> <!-- silver coin -->
+		<item id="2672" chance="25000"/><!-- dragon ham -->
+		<item id="8900" chance="200"/><!-- spellbook of enlightenment -->
+		<item id="7618" chance="5000"/><!-- health potion -->
+		<item id="2148" countmax="15" chance="9000"/><!-- gold coin -->
+		<item id="1294" countmax="34" chance="58250"/><!-- small stone -->
+		<item id="2509" chance="9750"/><!-- steel shield -->
+		<item id="2050" chance="7250"/><!-- torch -->
+		<item id="2166" chance="5000"/><!-- power ring-->
+		<item id="2483" chance="3250"/><!-- scale armor -->
+		<item id="5880" chance="2500"/><!-- iron ore -->
+		<item id="2124" chance="200"/><!-- crystal ring -->
+		<item id="2156" chance="150"/><!-- red gem -->
+	</loot>
+</monster>

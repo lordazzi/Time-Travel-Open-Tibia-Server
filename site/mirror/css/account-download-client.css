@@ -1,0 +1,9 @@
+a.downloader {
+	display: block;
+	margin: 20px auto;
+	width: 280px;
+}
+
+a.downloader img {
+	width: 280px;
+}

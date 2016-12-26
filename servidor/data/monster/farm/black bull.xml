@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Black Bull" namedescription="a black bull" race="blood" experience="190" speed="205" manacost="0">
+	<health now="300" max="300"/>
+	<look type="84" corpse="3016"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="32" attack="20"/>
+		<attack name="speed" interval="2000" chance="17" radius="4" target="0" duration="10000" speedchange="-50">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="15" range="7" radius="3" target="0" min="-30" max="-80">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="16">
+		<defense name="speed" interval="2000" chance="10" speedchange="250" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="13" min="8" max="33">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="50000" chance="10">
+		<voice sentence="Moooooooooah"/>
+		<voice sentence="Ooooh..."/>
+	</voices>
+	<loot capacity="150">
+		<item id="11245" countmax="2" chance="4300" /><!-- bunch of ripe rice -->
+		<item id="2671" countmax="4" chance="50000"/>
+		<item id="12428" countmax="2" chance="50000"/>
+		<item id="2666" countmax="4" chance="80000"/>
+		<item id="5911" countmax="1" chance="1000" />
+		<item id="5913" countmax="1" chance="1000" />
+		<item id="5878" countmax="1" chance="5000" />
+		<item id="5954" countmax="1" chance="5000"/>
+	</loot>
+</monster>

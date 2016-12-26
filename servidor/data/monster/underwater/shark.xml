@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shark" nameDescription="a shark" race="undead" experience="700" speed="450" manacost="255">
+	<health now="1200" max="1200"/>
+	<look type="453" head="0" body="0" legs="0" feet="0" corpse="13522"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="90"/>
+		<attack name="speed" interval="1000" chance="10" radius="5" target="0" duration="12000" speedchange="-560">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="speed" interval="2000" chance="7" speedchange="384" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="0"/>
+	</immunities>
+	<voices interval="3000" chance="20">
+		<voice sentence="Nhac nhac"/>
+		<voice sentence="Rarrr"/>
+	</voices>
+	<loot>
+		<item id="7963" countmax="1" chance="500" /> <!-- peixe espada -->
+		<item id="12447" countmax="1" chance="2000" /> <!-- barbatana dorsal -->
+		<item id="2669" countmax="4" chance="75000" /> <!-- peixes -->
+		<item id="7632" countmax="1" chance="150" /> <!-- perola gigante -->
+		<item id="7633" countmax="1" chance="150" /> <!-- perola gigante -->
+	</loot>
+</monster>

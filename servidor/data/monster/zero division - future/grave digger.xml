@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grave Digger" nameDescription="a grave digger" race="blood" experience="1195" speed="200" manacost="0">
+	<health now="2800" max="2800"/>
+	<look type="295" corpse="8948"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag staticattack="50"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="35"/>
+	</attacks>
+	<defenses armor="10" defense="15"/>
+	<elements>
+		<element firePercent="-20"/>
+		<element earthPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="52" chance="100000"/><!-- gold coin -->
+		<item id="8971" chance="1500"/><!-- gland -->
+		<item id="3976" countmax="45" chance="20000"/><!-- worm -->
+	</loot>
+</monster>

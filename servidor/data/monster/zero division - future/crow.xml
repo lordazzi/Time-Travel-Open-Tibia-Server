@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crow" namedescription="a crow" race="blood" experience="20" speed="350" manacost="300">
+	<health now="10" max="10"/>
+	<look type="223" corpse="6076"/>
+	<targetchange interval="2000" chance="16"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="20" attack="30"/>
+	</attacks>
+	<defenses armor="1" defense="3" />
+	<voices interval="1000" chance="20">
+		<voice sentence="CRAAAAAAAA"/>
+		<voice sentence="CRAAAAAAAAAAAAA"/>
+		<voice sentence="CROO"/>
+	</voices>
+	<loot>
+		<item id="2671" countmax="1" chance="5000" /> <!-- meat -->
+	</loot>
+</monster>

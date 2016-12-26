@@ -1,0 +1,99 @@
+#quantidade-de-pontos {
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	background-color: #CC0000;
+	border: 1px solid #DD0000;
+	border-left: none;
+	width: 75px;
+	padding: 6px 6px 6px 15px;
+	font-weight: bolder;
+	font-family: arial;
+	color: #FFF;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+	box-shadow: 0px 0px 50px #000;
+	-moz-box-shadow: 0px 0px 50px #000;
+	-webkit-box-shadow: 0px 0px 50px #000;
+	z-index: 1;
+}
+
+.container-container-selector {
+	display: inline-block;
+	height: 20px;
+	width: 90px;
+}
+
+.container-selector {
+	background-size: 16px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #FFF;
+	padding: 2px;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #000;
+	cursor: pointer;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 3px;
+}
+
+.container-selector.disabled {
+	background-color: #DEDEDE;
+	cursor: default;
+}
+
+.comprar {
+	margin-right: 10px;
+}
+
+.chooser {
+	width: 330px;
+	height: 200px;
+	overflow: overlay;
+}
+
+.modal.chooser {
+	width: 345px;
+	height: 300px;
+	overflow: auto;
+	margin-top: 40px !important;
+}
+
+.modal.chooser em {
+	font-size: 11px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* escolhendo entre mochila e sacola */
+.chooser span {
+	display: inline-block;
+	background-color: #FFF;
+	border: 1px solid #000;
+	width: 35px;
+	height: 35px;
+	padding: 6px;
+	text-align: center;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.chooser span:hover, .chooser span.selected {
+	background-color: #316AC5;
+}
+
+/* classes de promoção */
+span.promotion {
+	text-decoration: line-through;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+em.promotion {
+	text-decoration: none;
+}

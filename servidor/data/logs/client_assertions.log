@@ -1,0 +1,223 @@
+----- 30/1/2013 21:40:47 - Whiskey (177.0.232.23) -----
+Comment: 
+Graphic Engine: DirectX5 (0)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Core 2 DUO E7400
+Video Card: 
+Last Packet Types: 109 109 109 109 109 109 108 109 109 109
+Last Packet: 109 028 008 207 007 009 001 028 008 208 007 009 000 000 000 000
+Player Position: [2082,1999,8]
+Player Name: Whiskey (Time Travel Open Tibia Server)
+Player Action: 050 049 054 046 050 052 053 046 050 049 056 046 049 051 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Player.cpp 470: exception occurred, reason:
+Control.cpp 1913: exception occurred (MessageType: 0 MaW: 15887A0 MoW: 0), reason:
+Control.cpp 1908: exception occurred, reason:
+NWin32Exception.cpp 55: win32 exception occurred, reason:
+access violation (read attempt at FFFFFFFF)
+Wed Jan 30 20:40:13 2013
+Debug Assertion 9.60 NWin32Exception.cpp 55
+
+----- 5/2/2013 14:30:3 - Fonzie (177.132.179.173) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Home Premium Edition 64 Bit in BRA
+Processor: Quad Core AMD Phenom II P920
+Video Card: ATI Mobility Radeon HD 5650
+Last Packet Types: 170 108 109 109 029 109 106 170 108 030
+Last Packet: 108 040 008 252 007 009 001 170 000 000 000 000 006 000 070 111
+Player Position: [2087,2044,9]
+Player Name: Fonzie (Time Travel Open Tibia Server)
+Player Action: 050 049 054 046 050 052 053 046 050 049 056 046 049 051 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Network.cpp 979: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1439: exception occurred (Type = 170) (MainWindow = 54504792), reason:
+Communication.cpp 3260: exception occurred (ChatMessageMode = 0), reason:
+Communication.cpp 3251: unknown talk mode (TalkMode = 0), reason:
+[bug0000649]
+Tue Feb 05 14:32:21 2013
+Debug Assertion 9.60 Communication.cpp 3251
+
+----- 6/2/2013 16:24:20 - Dark Mago (177.49.218.230) -----
+Comment: 
+Graphic Engine: DirectX5 (0)
+Operating System: Windows 7 Ultimate Edition 32 Bit in BRA
+Processor: Intel Celeron 420 @ 1.6
+Video Card: Intel (R) G33/G
+Player.cpp 366: exception occurred, reason:
+MainFrm.cpp 630: exception occurred (point.x = 548) (point.y = 491), reason:
+Control.cpp 699: exception occurred (x = 548) (y = 491), reason:
+Dialogs.cpp 1054: exception occurred (x = 171) (y = 307), reason:
+GUI.cpp 1716: exception occurred (x = 171) (y = 307), reason:
+DialogElements.cpp 1391: exception occurred (x = 17) (y = 3), reason:
+GUI.cpp 2169: exception occurred, reason:
+Dialogs.cpp 4032: exception occurred (Event = 1), reason:
+NWin32Exception.cpp 55: win32 exception occurred, reason:
+access violation (read attempt at 00000020)
+Wed Feb 06 16:23:45 2013
+Debug Assertion 9.60 NWin32Exception.cpp 55
+
+----- 8/2/2013 19:43:31 - Selim Bredly (177.177.21.74) -----
+Comment: 
+Graphic Engine: DirectX5 (0)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Atom D425 @ 1.
+Video Card: Intel (R) GRAPH
+Last Packet Types: 170 160 160 140 107 170 107 170 109 109
+Last Packet: 170 232 001 000 000 009 000 076 111 114 100 032 065 122 122 105
+Player Position: [2081,1810,7]
+Player Name: Selim Bredly (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Player.cpp 470: exception occurred, reason:
+Control.cpp 1913: exception occurred (MessageType: 0 MaW: 9578648 MoW: 0), reason:
+Control.cpp 1908: exception occurred, reason:
+NWin32Exception.cpp 55: win32 exception occurred, reason:
+access violation (read attempt at FFFFFFFF)
+Thu Feb 07 20:31:15 2013
+Debug Assertion 9.60 NWin32Exception.cpp 55
+
+----- 8/2/2013 17:41:43 - Selim Bredly (177.177.21.74) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: VIA C7-D 1800
+Video Card: Chrome VIA 9 HC 
+Last Packet Types: 142 029 131 109 160 109 142 140 109 109
+Last Packet: 142 255 066 000 016 224 001 000 000 000 000 000 000 000 000 000
+Player Position: [2096,2044,6]
+Player Name: Selim Bredly (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Player.cpp 470: exception occurred, reason:
+Control.cpp 1913: exception occurred (MessageType: 0 MaW: 1578998 MoW: 0), reason:
+Control.cpp 1908: exception occurred, reason:
+Control.cpp 486: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 122: exception occurred (Surface = 1), reason:
+GUI.cpp 1628: exception occurred (Surface = 1), reason:
+MapWindow.cpp 856: exception occurred (Surface = 1), reason:
+MapWindow.cpp 535: exception occurred (Obj = 1281), reason:
+MapWindow.cpp 1156: exception occurred (posx = 192) (posy = 256), reason:
+MapWindow.cpp 1059: exception occurred (i = 0) (Creatures[i]->OutfitType = 480), reason:
+MapWindow.cpp 1024: exception occurred, reason:
+MapWindow.cpp 1267: outfit has not all four directions (Creature->OutfitType = 480) (GetOutfitPatternWidth(Creature->OutfitType) = 1)
+Tue Oct 09 17:49:33 2012
+Debug Assertion 9.60 MapWindow.cpp 1267
+
+----- 8/2/2013 17:41:50 - Fonzie (177.96.60.186) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows 7 Home Premium Edition 64 Bit in BRA
+Processor: Quad Core AMD Phenom II P920
+Video Card: ATI Mobility Radeon HD 5650
+Last Packet Types: 100 010 031 020 031 020 031 020 031 100
+Last Packet: 010 239 066 000 016 050 000 000 100 048 008 253 007 006 000 000
+Player Name: Fonzie (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Network.cpp 979: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1439: exception occurred (Type = 100) (MainWindow = 45868456), reason:
+Communication.cpp 1966: exception occurred (PlayerX = 2096) (PlayerY = 2045), reason:
+Communication.cpp 1944: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1923: exception occurred (Type = 97) (OldType = 4542), reason:
+Communication.cpp 1850: exception occurred (Type = 97) (CreatureID = 268452607), reason:
+Communication.cpp 1771: outfit has not all four directions (Creature->OutfitType = 480) (GetOutfitPatternWidth(Creature->OutfitType) = 1)
+Fri Feb 08 17:41:08 2013
+Debug Assertion 9.60 Communication.cpp 1771
+
+----- 8/2/2013 20:49:5 - Cama De Zona (200.150.78.130) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Pentium 4 3.20GHZ
+Video Card: NVIDIA GeForce 7100 GS
+Last Packet Types: 106 109 109 109 109 107 109 106 130 109
+Last Packet: 106 028 008 218 007 009 002 098 000 193 064 000 064 100 003 026
+Player Position: [2068,2007,8]
+Player Name: Cama De Zona (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+MainFrm.cpp 496: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1571: exception occurred, reason:
+Network.cpp 802: exception occurred ((force?1:0) = 1), reason:
+NWin32Exception.cpp 55: win32 exception occurred, reason:
+access violation (write attempt at 00000030)
+Fri Feb 08 20:45:10 2013
+Debug Assertion 9.60 NWin32Exception.cpp 55
+
+----- 9/2/2013 1:3:48 - Yaotzinsz (186.224.152.29) -----
+Comment: 
+Graphic Engine: DirectX5 (0)
+Operating System: Windows 7 Ultimate Edition 32 Bit in BRA
+Processor: Dual Core Intel Pentium E5300 @ 2
+Video Card: Intel (R) G33/G
+Last Packet Types: 142 142 029 030 142 142 107 142 142 029
+Last Packet: 142 035 086 000 016 219 001 000 000 000 000 000 000 000 000 000
+Player Position: [2182,1805,7]
+Player Name: Yaotzinsz (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Player.cpp 470: exception occurred, reason:
+Control.cpp 1913: exception occurred (MessageType: 0 MaW: F7E510 MoW: 0), reason:
+Control.cpp 1908: exception occurred, reason:
+Control.cpp 486: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 122: exception occurred (Surface = 1), reason:
+GUI.cpp 1628: exception occurred (Surface = 1), reason:
+MapWindow.cpp 856: exception occurred (Surface = 1), reason:
+MapWindow.cpp 535: exception occurred (Obj = 4515), reason:
+MapWindow.cpp 1156: exception occurred (posx = 288) (posy = 160), reason:
+MapWindow.cpp 1059: exception occurred (i = 0) (Creatures[i]->OutfitType = 475), reason:
+MapWindow.cpp 1024: exception occurred, reason:
+MapWindow.cpp 1267: outfit has not all four directions (Creature->OutfitType = 475) (GetOutfitPatternWidth(Creature->OutfitType) = 1)
+Sat Feb 09 01:02:16 2013
+Debug Assertion 9.60 MapWindow.cpp 1267
+
+----- 14/2/2013 0:58:51 - Selim Bredly (189.71.156.120) -----
+Comment: 
+Graphic Engine: DirectX5 (0)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Celeron 420 @ 1.6
+Video Card: Intel (R) G33/G
+Last Packet Types: 170 162 162 162 160 131 106 181 180 030
+Last Packet: 170 122 003 000 000 011 000 069 114 105 099 032 066 114 101 100
+Player Position: [0,0,0]
+Player Name: Eric Bredly (Time Travel Open Tibia Server)
+Player Action: 049 057 056 046 049 053 046 054 055 046 049 053 054 058 055 049 055 050
+Player.cpp 366: exception occurred, reason:
+Player.cpp 470: exception occurred, reason:
+Control.cpp 1913: exception occurred (MessageType: 0 MaW: 9388998 MoW: 0), reason:
+Control.cpp 1908: exception occurred, reason:
+Control.cpp 486: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 122: exception occurred (Surface = 1), reason:
+GUI.cpp 1628: exception occurred (Surface = 1), reason:
+MapWindow.cpp 856: exception occurred (Surface = 1), reason:
+MapWindow.cpp 809: exception occurred, reason:
+MapWindow.cpp 1632: exception occurred, reason:
+MapWindow.cpp 1616: unknown talk box mode (GetTalkboxMode(Talkbox) = 1)
+Fri Jun 05 06:04:53 2009
+Debug Assertion 9.60 MapWindow.cpp 1616
+
+----- 23/2/2013 4:52:30 - Eric Bredly (189.71.175.122) -----
+
+Graphic Engine: OpenGL (1)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Atom D425 @ 1.
+Video Card: Intel (R) GRAPH
+Player.cpp 361: exception occurred, reason:
+Network.cpp 892: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1214: exception occurred, reason:
+Communication.cpp 121: exception occurred, reason:
+Communication.cpp 109: Asymmetric encryption for login server failed
+000 158 099 024 185 222 075 029 092 226 098 129 005 094 097 074 
+232 009 000 104 101 108 101 110 097 049 053 057 007 000 055 050 
+054 056 054 052 055 019 066 082 065 246 007 003 042 016 001 000 
+000 068 052 050 053 032 064 032 049 046 017 018 003 007 003 007 
+000 000 002 000 040 082 041 032 071 082 065 080 072 000 000 000 
+004 000 003 060 109 029 249 001 210 104 217 238 100 123 016 137 
+129 014 154 141 208 245 002 106 050 070 161 226 242 029 175 068 
+070 032 057 196 091 098 206 245 234 042 223 020 069 255 144 033 
+, reason:
+Plain is not smaller than m_ModulusM which violates the condition 'plain < m'
+Fri Feb 22 21:09:27 2013
+Debug Assertion 8.60 Communication.cpp 109
+

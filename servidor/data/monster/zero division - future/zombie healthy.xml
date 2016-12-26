@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zombie Healthy" nameDescription="a zombie healthy" race="blood" experience="310" speed="155" manacost="550">
+	<health now="415" max="500"/>
+	<look type="425" corpse="6080"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="65" attack="45"/>
+		<attack name="lifedrain" interval="1000" chance="12" range="1" min="-30" max="-55"/>
+		<attack name="manadrain" interval="1000" chance="13" range="1" min="-0" max="-45"/>
+	</attacks>
+	<defenses armor="30" defense="42">
+		<defense name="healing" interval="1000" chance="13" min="50" max="85">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="1000" chance="2" item="6080" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<elements>
+		<element deathPercent="100"/>
+		<element holyPercent="-50"/>
+	</elements>
+	<voices interval="2000" chance="10">
+		<voice sentence="NOOOoooooooooo...." yell="1" />
+		<voice sentence="Ahhhhhhhh..."/>
+		<voice sentence="Argg..."/>
+		<voice sentence="NOOOoooooooooo...." yell="1" />
+		<voice sentence="Ahhhhhhhh..."/>
+		<voice sentence="No..."/>
+	</voices>
+	<loot capacity="800">
+		<item id="2386" countmax="1" chance="4000"/><!-- axe -->
+		<item id="2460" countmax="1" chance="8000"/><!-- brass helmet -->
+		<item id="2172" countmax="1" chance="15000"/><!-- broze amulet -->
+		<item id="2170" countmax="1" chance="15000"/><!-- silver amulet -->
+		<item id="2464" countmax="1" chance="10000"/><!-- chain armor -->
+		<item id="2458" countmax="1" chance="5000"/><!-- chain helmet -->
+		<item id="2649" countmax="1" chance="15000"/><!-- leather legs -->
+		<item id="2398" countmax="1" chance="13000"/><!-- mace -->
+		<item id="2666" countmax="1" chance="1000"/><!-- meat -->
+		<item id="2510" countmax="1" chance="20000"/><!-- plate shield -->
+		<item id="2550" countmax="1" chance="20000"/><!-- scythe -->
+		<item id="2554" countmax="1" chance="3000"/><!-- shovel -->
+		<item id="2376" countmax="1" chance="10000"/><!-- sword -->
+		<item id="2148" countmax="30" chance="34750"/><!-- gold coin -->
+		<item id="2460" chance="19250"/><!-- brass helmet -->
+		<item id="5913" chance="1000"/><!-- brown piece of cloth -->
+		<item id="2403" chance="15250"/><!-- knife -->
+		<item id="2168" chance="2000"/><!-- life ring -->
+		<item id="2483" chance="2900"/><!-- scale armor -->
+		<item id="2229" countmax="2" chance="1500"/><!-- skull -->
+		<item id="2050" chance="57850"/><!-- torch -->
+		<item id="2473" chance="5800"/><!-- viking helmet -->
+		<item id="3976" countmax="6" chance="47500"/><!-- worm -->
+		<item id="2148" countmax="64" chance="24000"/><!-- gold coin -->
+		<item id="2227" chance="45000"/><!-- rotten meat -->
+		<item id="2050" chance="46250"/><!-- torch -->
+		<item id="2460" chance="8700"/><!-- brass helmet -->
+		<item id="2457" chance="2700"/><!-- steel helmet -->
+		<item id="2398" chance="7250"/><!-- mace -->
+		<item id="9811" chance="7250"/><!-- rusty legs -->
+		<item id="9814" chance="7250"/><!-- rusty shield -->
+		<item id="9817" chance="7250"/><!-- rusty boots -->
+		<item id="9820" chance="7250"/><!-- rusty helmet -->
+		<item id="2381" chance="2900"/><!-- battle hammer -->
+		<item id="2381" chance="4350"/><!-- halberd -->
+		<item id="2205" chance="2900"/><!-- life ring -->
+		<item id="7620" chance="1450"/><!-- mana potion -->
+		<item id="2657" chance="900"/><!-- simple dress -->
+		<item id="2401" chance="15000"/><!-- staff -->
+		<item id="2175" chance="10000"/><!-- spell book -->
+		<item id="2144" chance="650"/><!-- black pearl -->
+		<item id="2143" chance="550"/><!-- white pearl -->
+		<item id="2237" chance="45000"/><!-- dirty cape -->
+		<item id="2479" chance="6000"/><!-- strange helmet -->
+		<item id="2171" chance="300"/><!-- platinium amulet -->
+		<item id="2214" chance="750"/><!-- ring of healing -->
+		<item id="2535" chance="100"/><!-- castle shield -->
+	</loot>
+</monster>

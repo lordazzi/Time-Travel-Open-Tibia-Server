@@ -1,0 +1,16 @@
+.search {
+	border: 1px solid #4E1A01;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	height: 151px;
+}
+
+.last {
+	float: none;
+}
+
+.margintop {
+	margin-top: 5px;
+}

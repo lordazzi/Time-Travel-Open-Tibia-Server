@@ -1,0 +1,4 @@
+input[type="text"].recoverykey {
+	width: 50px;
+	text-transform: uppercase;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Black Butterfly" nameDescription="a black butterfly" race="venom" experience="0" speed="300" manacost="0">
+	<health now="25" max="25"/>
+	<look type="363" corpse="5989"/>
+	<targetchange interval="5000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag ignore="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="6"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2"/>
+	</flags>
+	<defenses armor="6" defense="10"/>
+</monster>

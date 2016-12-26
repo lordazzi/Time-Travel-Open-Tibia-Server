@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="Magic Bear" namedescription="a magic bear" race="blood" experience="85" speed="190" manacost="300">
+	<health now="130" max="130"/>
+	<look type="16" corpse="5975"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="20"/>
+		<attack name="energy" interval="2000" chance="20" range="6" radius="2" target="1" min="-20" max="-35">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="energy" interval="1000" chance="10" range="3" target="1" min="0" max="-15">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="energycondition" interval="1000" chance="15" radius="3" target="0">
+			<atttribute key="areaEffect" value="yellowenergy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="25" range="7" radius="2" target="1" min="-20" max="-35">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="10" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10">
+		<defense name="healing" interval="2000" chance="15" min="90" max="150">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="25"/>
+		<element holyPercent="15"/>
+		<element deathPercent="17"/>
+		<element earthPercent="-15"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="10">
+		<voice sentence="Quem roubou meu mel?"/>
+		<voice sentence="Meu mel deido..."/>
+		<voice sentence="Foi você deido?"/>
+		<voice sentence="Por que cê ta fazendo isso comigo?"/>
+	</voices>
+	<loot>
+		<item id="5896" chance="2000"/><!-- bear paw -->
+		<item id="2671" countmax="3" chance="15000"/><!-- ham -->
+		<item id="2666" countmax="4" chance="36750"/><!-- meat -->
+		<item id="2190" chance="15000"/><!-- wand of vortex -->
+		<item id="2165" chance="500"/><!-- stealth ring -->
+		<item id="2168" chance="500"/><!-- life ring -->
+		<item id="5902" chance="30000"/><!-- honeycomb -->
+		<item id="5902" chance="5000"/><!-- honeycomb -->
+		<item id="2374" chance="5000"/><!-- wooden flute -->
+		<item id="2162" chance="750"/><!-- magic lightwand -->
+		<item id="2170" chance="750"/><!-- silver amulet -->
+	</loot>
+</monster>

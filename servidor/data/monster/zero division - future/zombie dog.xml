@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zombie Dog" nameDescription="a zombie dog" race="blood" experience="25" speed="230" manacost="255">
+	<health now="25" max="25"/>
+	<look type="27" head="0" body="0" legs="0" feet="0" corpse="2826"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="8"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="22" attack="15"/>
+	</attacks>
+	<defenses armor="1" defense="4"/>
+	<elements>
+		<element deathPercent="100"/>
+		<element holyPercent="-50"/>
+	</elements>
+	<loot capacity="100">
+		<item id="2666" countmax="2" chance="50000"/>
+		<item id="3976" countmax="1" chance="10000"/>
+	</loot>
+</monster>

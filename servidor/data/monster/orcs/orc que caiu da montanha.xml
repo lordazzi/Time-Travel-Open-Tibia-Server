@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc que caiu da montanha" nameDescription="an orc que caiu da montanha" race="blood" experience="25" speed="150" manacost="300">
+	<health now="20" max="70"/>
+	<look type="5" corpse="5966"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag ignore="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="20"/>
+	</attacks>
+	<defenses armor="4" defense="8"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earthPercent="-20"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="1000" chance="10">
+		<voice sentence="Ain manoo..."/>
+		<voice sentence="Eu machuquei meu dedinho..."/>
+		<voice sentence="Por que aconteceu isso comigo?"/>
+		<voice sentence="Eu só queria um abraço..."/>
+	</voices>
+</monster>

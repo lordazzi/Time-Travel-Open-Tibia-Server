@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ironblight" namedescription="ironblight" race="blood" experience="375" speed="570" manacost="0">
+	<health now="660" max="660"/>
+	<look type="498" corpse="17424"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag ignore="0"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="0"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-20" max="-45"/>
+		<attack name="ice" interval="1000" chance="15" radius="2" target="1" min="-30" max="-50">
+			<attribute key="areaEffect" value="bluebubble"/>
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="15" range="7" radius="1" target="1" min="-15" max="-2">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="33">    
+	</defenses>
+	<voices interval="3000" chance="200">
+		<voice sentence="Clink!"/>
+		<voice sentence="Yowl!"/>
+		<voice sentence="Clank!"/>
+	</voices>
+	<elements>              
+		<element deathPercent="10"/>           
+		<element icePercent="10"/>             
+		<element firePercent="10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>      
+	<loot>
+		<item id="2148" countmax="197" chance="30000"/><!-- copper coin -->
+		<item id="2150" countmax="3" chance="500"/> <!-- small amethyst -->
+		<item id="2149" countmax="3" chance="500"/> <!-- small emerald -->
+		<item id="7589" chance="2463"/> <!-- strong mana potion -->
+		<item id="10571" chance="1716"/>
+		<item id="11227" chance="1343"/>
+		<item id="18412" chance="240"/>
+		<item id="8912" chance="630"/>
+		<item id="11368" chance="620"/>
+		<item id="7885" chance="610"/>
+	</loot>
+</monster>

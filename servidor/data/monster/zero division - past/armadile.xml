@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Armadile" namedescription="a armadile" race="blood" experience="290" speed="340" manacost="0">
+	<health now="480" max="480"/>
+	<look type="487" corpse="18378"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag ignore="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="80"/>
+	</flags>
+	<attacks>
+  <attack name="melee" interval="2000" min="-30" max="-80"/>
+		<attack name="fire" interval="3000" chance="17" length="4" spread="3" min="-65" max="-90">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="13" range="7" min="-10" max="-25">
+			<attribute key="areaEffect" value="smallplants"/>
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="29">
+		<defense name="invisible" interval="5000" chance="50" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="15"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Creak!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="30" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="30" chance="100000"/><!-- gold coin -->
+		<item id="7620" countmax="3" chance="14285"/><!-- mana potion -->
+		<item id="7591" countmax="1" chance="10285"/><!-- great health potion -->
+		<item id="7588" countmax="1" chance="10285"/><!-- strong health potion -->
+		<item id="7590" countmax="2" chance="3285"/><!-- great mana potion -->
+		<item id="7589" countmax="2" chance="3285"/><!-- strong mana potion -->
+		<item id="12403" chance="12500"/><!-- battle stone -->
+		<item id="18437" countmax="10" chance="10000"/><!-- envenomed arrow -->
+		<item id="18436" countmax="5" chance="7692"/><!-- drill bolt -->
+		<item id="13757" chance="5882"/><!-- coal -->
+		<item id="7886" chance="2941"/><!-- terra boots -->
+		<item id="7413" chance="369"/><!-- titan axe -->
+		<item id="7428" chance="200"/><!-- bonebreaker -->
+		<item id="2169" chance="2917"/><!-- time ring -->
+		<item id="2528" chance="460"/><!-- tower shield -->
+		<item id="8878" chance="230"/><!-- crystalline armor -->
+	</loot>
+</monster>

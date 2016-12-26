@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Guaraba Guard" nameDescription="a guaraba guard" race="blood" experience="60" speed="172" manacost="390">
+	<health now="185" max="185"/>
+	<look type="154" head="116" body="117" legs="62" feet="105" addons="2" mount="3" corpse="6080"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="35"/>
+	</attacks>
+	<defenses armor="15" defense="32"/>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="0"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Djo djo"/>
+		<voice sentence="Dja djo"/>
+		<voice sentence="Ybebe"/>
+		<voice sentence="Ululu"/>
+		<voice sentence="YBebe Ybebe Yeeha!"/>
+	</voices>
+	<loot capacity="800">
+		<item id="2667" countmax="3" chance="30000"/> <!-- fish -->
+		<item id="2669" countmax="1" chance="10000"/> <!-- large fish -->
+		<item id="7452" countmax="1" chance="200"/> <!-- spiked squerlcher -->
+		<item id="3983" countmax="1" chance="50000"/> <!-- native skirt -->
+		<item id="2526" countmax="1" chance="5000"/> <!-- studded shield -->
+		<item id="2050" countmax="1" chance="5000"/> <!-- torch -->
+		<item id="3970" countmax="1" chance="500"/> <!-- Guaraba helmet -->
+		<item id="7343" chance="30000"> <!-- native bag -->
+			<inside>
+				<item id="2148" countmax="10" chance="40000"/> <!-- copper coin -->
+				<item id="2147" countmax="3" chance="100"/> <!-- ruby -->
+			</inside>
+		</item>
+	</loot>
+</monster>
